@@ -1,0 +1,40 @@
+name: Update Map and Deploy
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'  # Exécute le script toutes les 10 minutes
+  push:
+    branches:
+      - main  # Exécute le workflow après un push sur main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Cloner le dépôt
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Configurer Python
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.10
+
+      # 3. Installer les dépendances Python
+      - name: Install dependencies
+        run: |
+          pip install folium  # Installe Folium
+          pip install -r requirements.txt  # Installe toutes les dépendances si tu as un requirements.txt
+
+      # 4. Exécuter le script pour générer la carte
+      - name: Generate updated map
+        run: python generate_map.py
+
+      # 5. Déployer sur GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./  # Publie tout le contenu mis à jour
