@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MontpellierParkings - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">MontpellierParkings</div>
+        <nav>
+            <a href="index.html" class="active">Accueil</a>
+            <a href="parking-velo.html">Parking Vélo</a>
+            <a href="parking-voiture.html">Parking Voiture</a>
+            <a href="parking-combine.html">Parking Vélo/Voiture</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Intro Section -->
+        <section class="intro">
+            <h1>Bienvenue sur MontpellierParkings</h1>
+            <p>
+                Ce site vous permet de visualiser en temps réel les parkings vélos et voitures à Montpellier, ainsi que leur taux d’occupation.
+                Explorez la carte ci-dessous pour voir l'état actuel des parkings.
+            </p>
+            <p>
+                Cliquez sur les liens en bas de la page pour accéder à une analyse détaillée incluant des graphiques et du code Python,
+                qui illustrent l'évolution et les tendances des données sur les parkings.
+            </p>
+        </section>
+
+        <!-- Map Section -->
+        <div class="map-container">
+            <iframe src="MontpellierParking.html"></iframe>
+        </div>
+
+        <!-- Links Intro Section -->
+        <section class="links-intro">
+            <p>
+                Vous pouvez consulter des analyses spécifiques en cliquant sur les liens ci-dessous. Chaque lien vous mènera à une page dédiée
+                qui présente des graphiques, des statistiques et des tendances calculées à l'aide de Python.
+            </p>
+        </section>
+
+        <!-- Links Section -->
+        <div class="link-container">
+            <a href="parking-voiture.html" class="main-link">
+                <img src="parking.png" alt="Parking Voiture">
+                <span>Parking Voiture</span>
+            </a>
+            <a href="parking-velo.html" class="main-link">
+                <img src="signalisation.png" alt="Parking Vélo">
+                <span>Parking Vélo</span>
+            </a>
+            <a href="parking-combine.html" class="main-link">
+                <img src="voiturevelo.png" alt="Parking Vélo/Voiture">
+                <span>Parking Vélo/Voiture</span>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <h1>En savoir plus : </h1>
+        <p>Si vous voulez savoir comment on a récoltés les données et on les as disposé dans un fichier json, afin de pouvoir les traités les données comme nous l'avons fait ici. <br><br>(ASSARRAR Mohamed & SOUCHET Timothée)</p>
+    </footer>
+</body>
+</html>

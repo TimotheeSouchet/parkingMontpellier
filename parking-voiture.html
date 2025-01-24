@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MontpellierParkings - Parking Voiture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">MontpellierParkings</div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="parking-velo.html">Parking Vélo</a>
+            <a href="parking-voiture.html" class="active">Parking Voiture</a>
+            <a href="parking-combine.html">Parking Vélo/Voiture</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Parking Voiture</h1>
+        <p>Bienvenue sur la page dédiée aux parkings pour voitures à Montpellier.</p>
+
+        <section class="analysis-section">
+            <h2>Analyse des parkings Voiture de Montpellier</h2>
+            <div class="images-container">
+                <img src="image_graph/Figure_1.png" alt="Image de parking à gauche">
+                <img src="image_code/carbon1.png" alt="Image de parking à droite">
+            </div>
+            <p>
+                Dans cette analyse ci-contre j'ai utilié un code Python qui permet d'abord de lire mon fichier json principale.
+                Il fait d'abord le pourcentage des parkings les uns après les autres puis calcule le pourcentage total de tous
+                les parkings d'une analyse puis passe a l'analyse suivante il récupère également l'heure de l'analyse.
+                <br>
+                On remarque ici que jusqu'a 6h47, la majeur partie des parkings sont libres environ 75%. Puis a l'heure de pointe
+                vers 17h environ seulement la moitié des parkings sont disponibles soient environ 50%, puis ensuite cela remonte peu à peu.
+                <br><br>
+                Seulement ici on affiche un graphique pour tous les parkings de Montpellier tandis qu'il serait important de savoir les parkings
+                exentrée de la ville on un impact sur ce graphique.
+            </p>
+        </section>
+
+        <section class="analysis-section">
+            <h2>Évolution d'un Parking En centre ville : </h2>
+            <div class="images-container">
+                <img src="image_graph/Figure_2.png" alt="Image de parking en périphérie à gauche">
+                <img src="image_code/carbon2.png" alt="Image de parking en périphérie à droite">
+            </div>
+            <p>
+               Ici, nous avons cherché à savoir si un parking très emprunté avait une courbe similaire à celle que nous avions vue juste avant.
+                Cependant, la courbe semble assez similaire, à la différence que les pourcentages d'occupation sont différents. Pour le parking de la Comédie,
+                il n'est jamais complètement vide, ce qui n'est pas le cas pour certains parkings tels que le parking de "Gaumont-Circé", qui possède un taux de 100 % de places
+                libres avant 7 heures. On peut dire que les périodes de pointe (matin, midi, soir) affectent tous les parkings de manière assez similaire, et que les automobilistes
+                se stationnent dans des parkings en fonction de l'heure et non de la localisation spécifique. Ceux qui sont situés dans des endroits comme Odysseum ont des comportements
+                un peu différents, car il y a des activités qui durent jusqu'à minuit, comme la restauration rapide (KFC, McDonald's, Burger King), le cinéma (Pathé Gaumont), le Laser Game, etc.
+            </p>
+        </section>
+
+                <section class="analysis-section">
+            <h2>Analyse d'un parking fermé la nuit et excentré du centre ville : </h2>
+            <div class="images-container">
+                <img src="image_graph/Figure_3.png" alt="Image de parking en périphérie à gauche">
+                <img src="image_code/carbon4.png" alt="Image de parking en périphérie à droite">
+            </div>
+            <p>
+                Le graphique montre que ce parking se distingue par un pic d’occupation plus marqué que les autres parkings de la ville. Cette différence peut s’expliquer par des
+                particularités liées à sa localisation. Contrairement à d’autres zones bien desservies par les transports en commun, comme par exemple pour la Comédie qui, pourtant
+                très réputée, n'est jamais vraiment saturée et reste sous les 50 %, la zone du Gaumont dispose de la ligne 1 de tramway ainsi que de bus LiO Transport et de TAM. De plus,
+                l’utilisation du parking augmente grâce aux nombreuses activités situées autour, telles que les restaurants rapides, le cinéma (Pathé Gaumont), le Laser Game, etc.
+            </p>
+        </section>
+        <br><br><br>
+        <section class="analysis-section">
+        <p>
+            Cette étude illustre les tendances d'utilisation des parkings à Montpellier, influencées par leur emplacement et les installations aux alentours. Le parking de la Comédie,
+            situé au cœur de la ville et accessible facilement grâce aux transports publics, présente un taux d'occupation constant qui ne dépasse jamais 50 %. Cependant,
+            le stationnement Gaumont-Circé, qui se trouve dans une zone desservie par la ligne 1 du tramway ainsi que par des bus LiO et TAM, ça ce différencie par son taux de 100 % de
+            places disponibles avant 7 heures. Ce n'est pas dû à une faible fréquentation, mais plutôt au fait qu'il est fermé pendant la nuit. En dépit de ces caractéristiques
+            spécifiques, tous les parkings partagent une tendance générale liée aux heures d'activité urbaine : les moments de pointe (surtout aux alentours de 17 h - 18 h,
+            notamment en fin de journée) diminuent considérablement le nombre de places disponibles à environ 50 %, alors que les heures du matin et du soir connaissent.
+        </p>
+        </section>
+    </main>
+</body>
+</html>
