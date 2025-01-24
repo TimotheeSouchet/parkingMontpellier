@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MontpellierParkings - Parking Vélo/Voiture</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">MontpellierParkings</div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="parking-velo.html">Parking Vélo</a>
+            <a href="parking-voiture.html">Parking Voiture</a>
+            <a href="parking-combine.html" class="active">Parking Vélo/Voiture</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Parking Vélo/Voiture</h1>
+        <p>Bienvenue sur la page dédiée aux parkings pour vélos et voitures à Montpellier.</p>
+
+             <section class="analysis-section">
+            <h2>Analyse de la matrice de corrélation entre les listes des poucentages d'occupation : </h2>
+            <div class="images-container">
+                <img src="image_code/carbon6.png" alt="Image de parking à gauche">
+                <img src="image_graph/figure6.png" alt="Image de parking à droite">
+            </div>
+            <p>
+                Le code a pour objectif de lire deux fichiers contenant des données sur les parkings vélos et voitures, et de générer deux listes correspondant respectivement
+                aux places disponibles pour chaque type de véhicule. À partir de ces données, on calcule une matrice de correlatin pour analyser la relation entre les deux listes. Les résultats montrent une forte corrélation positive,
+                ce qui indique que les variations des places disponibles pour les vélos et les voitures sont liées. C'est surement dû à des facteurs communs,
+                tels que des heures de pointe ou des flux de trafic global influençant l'occupation des deux types de parkings de manière cohérente.
+            </p>
+        </section>
+
+        <section class="analysis-section">
+            <h2>Analyse des ecarts types Vélo/Voiture : </h2>
+            <H3>Analyse des parkings voiture de montpellier : </H3>
+            <div class="images-container">
+                <img src="image_graph/figure7.png" alt="Image de parking à gauche">
+                <img src="image_code/carbon7.png" alt="Image de parking à droite">
+            </div>
+            <p>
+                Un écart-type de 8.8 pour les parkings de Montpellier montre qu'il y a pas mal de variations dans l'occupation des places au fil du temps. Ça veut dire que les parkings ne sont pas toujours remplis de la même manière,
+                avec des périodes où certains sont très pleins et d'autres plus vides. Ces différences peuvent venir de trucs comme les heures de pointe, certains parkings qui sont plus populaires, ou même des événements spécifiques.
+                Un écart-type comme ça montre qu'il peut être difficile de prévoir combien de places seront libres sans avoir des données actualisées. Ça pourrait être utile pour mieux gérer les parkings et éviter que certains soient surchargés pendant que d'autres restent sous-utilisés.
+            </p>
+            <H3>Analyse des parkings vélo de montpellier : </H3>
+            <div class="images-container">
+                <img src="image_graph/figure8.png" alt="Image de parking à gauche">
+                <img src="image_code/carbon8.png" alt="Image de parking à droite">
+            </div>
+            <p>
+                Un écart-type de 0.44 pour les parkings vélos de Montpellier montre que les variations dans les moyennes des places libres sont très faibles. Cela signifie que l'occupation des parkings vélos est relativement stable au fil du temps,
+                avec des fluctuations minimes. Contrairement aux parkings voitures, cette faible variabilité peut s'expliquer par un usage plus homogène ou constant des parkings vélos, probablement lié à des habitudes régulières des usagers, comme les déplacements domicile-travail.
+                Ce résultat indique une bonne prévisibilité pour la disponibilité des places vélos,
+                ce qui est un atout pour les utilisateurs, mais peut aussi révéler une occupation moins dynamique ou un manque d'adaptation à des périodes de forte demande.
+            </p>
+        </section>
+        <section class="analysis-section">
+            <p>En conclusion, cette analyse montre que les parkings vélos et voitures à Montpellier sont étroitement liés dans leur fonctionnement, comme le prouve la forte corrélation
+                entre les variations des places disponibles. Quand les parkings voitures se remplissent ou se vident, on observe souvent la même tendance pour les vélos,
+                probablement à cause de facteurs communs comme les heures de pointe ou les flux de trafic. Mais il y a une grosse différence dans la manière dont ils sont utilisés
+                : les parkings voitures montrent beaucoup de variations (écart-type de 8.8), tandis que les parkings vélos sont bien plus stables (écart-type de 0.44). Cela reflète des
+                comportements différents : les voitures, plus imprévisibles, et les vélos, plus réguliers. Ces résultats montrent que chaque type de parking a ses propres besoins,
+                et une gestion adaptée pourrait vraiment aider à mieux équilibrer leur utilisation.</p>
+</body>
+</html>
