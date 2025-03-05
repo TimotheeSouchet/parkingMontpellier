@@ -32,13 +32,13 @@ for parking in data_car:
     coordinates = parking['location']['value']['coordinates']
     
     # Calculer le taux d'occupation
-    occupancy_rate = (available_spots / total_spots) * 100
+    #occupancy_rate = (available_spots / total_spots) * 100
     
     # Déterminer la couleur en fonction du taux d'occupation
     color = get_color(occupancy_rate)
     
     # Créer une info popup
-    popup_info = f"Parking voiture: {name}<br>Disponibles: {available_spots}/{total_spots} places<br>Taux d'occupation: {occupancy_rate:.2f}%"
+    #popup_info = f"Parking voiture: {name}<br>Disponibles: {available_spots}/{total_spots} places<br>Taux d'occupation: {occupancy_rate:.2f}%"
     
     # Ajouter un marqueur à la carte
     folium.Marker(
@@ -61,7 +61,7 @@ for parking in data_bike:
     color = get_color(occupancy_rate)
     
     # Créer une info popup
-    popup_info = f"Parking vélo: {name}<br>Disponibles: {available}/{total} places<br>Taux d'occupation: {occupancy_rate:.2f}%"
+    #popup_info = f"Parking vélo: {name}<br>Disponibles: {available}/{total} places<br>Taux d'occupation: {occupancy_rate:.2f}%"
     
     # Ajouter un marqueur à la carte
     folium.Marker(
